@@ -9,7 +9,7 @@
 MotorGroup left_motors({-1, 2, 3},  MotorGearset::blue); // left motors on ports 1 (1st), 2 (2nd), 3 (3rd)
 MotorGroup right_motors({4, -5, -6},  MotorGearset::blue); // right motors on ports 4 (1st), 5 (2nd), 6 (3rd)
 Motor main_intake(11); // main intake in port 11
-Motor bridge (12); // bridge in port 12
+Motor bridge(12); // bridge in port 12
 
 // drivetrain settings
 lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
@@ -20,11 +20,6 @@ lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
                               2 // horizontal drift is 2 (for now)
 );
 
-
-
-// tracking wheels 
-Rotation vertical_rotation_sensor(7); // create a v5 rotation sensor on port 7
-Rotation horizontal_rotation_sensor(8); // create a v5 rotation sensor on port 8
 
 
 // imu

@@ -17,11 +17,6 @@ extern lemlib::Drivetrain drivetrain;
 // NOT CURRENTLY ON BOT
  extern Imu imu; 
 
-// tracking wheels 
-extern Rotation vertical_rotation_sensor; // create a v5 rotation sensor on port 7
-extern Rotation horizontal_rotation_sensor; // create a v5 rotation sensor on port 8
-
-
 // vertical tracking wheel encoder
 extern  Rotation vertical_rotation_sensor; // create a v5 rotation sensor on port 7]
 // horizontal tracking wheel encoder
