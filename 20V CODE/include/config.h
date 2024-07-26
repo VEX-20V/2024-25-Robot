@@ -3,7 +3,7 @@
 
 
 // controller 
- extern Controller controller;
+extern Controller controller(E_CONTROLLER_MASTER);
 
 
 // Config the Motors 
@@ -13,7 +13,7 @@ extern Motor main_intake; // main intake in port 11
 extern Motor bridge; // bridge in port 12
 
 // drivetrain settings
-extern lemlib::Drivetrain driver;
+lemlib::Drivetrain drivetrain;
 
 // // NOT CURRENTLY ON BOT
 //  extern Imu imu; 

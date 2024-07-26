@@ -36,9 +36,10 @@
 #pragma once
 #include "api.h"
 #include "lemlib/api.hpp" // IWYU pragma: keep
+#include "config.h"
 #include "drive.h"
 #include "control.h"
-#include "config.h"
+
 
 /**
  * You should add more #includes here

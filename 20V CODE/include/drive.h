@@ -50,7 +50,7 @@ lemlib::ExpoDriveCurve steer_curve(3, // joystick deadband out of 127
 );
 
 // create the chassis
-lemlib::Chassis chassis(driver,
+lemlib::Chassis chassis(drivetrain,
                         lateral_controller,
                         angular_controller,
                         sensors,
