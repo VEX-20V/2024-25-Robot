@@ -33,7 +33,7 @@
  * For instance, you can do `4_mtr = 50` to set motor 4's target velocity to 50
  */
 #define PROS_USE_LITERALS
-
+#pragma once
 #include "api.h"
 #include "lemlib/api.hpp" // IWYU pragma: keep
 #include "drive.h"

@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 
@@ -12,8 +13,8 @@ Motor main_intake(11); // main intake in port 11
 Motor bridge(12); // bridge in port 12
 
 // drivetrain settings
-lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
-                              &right_motor_group, // right motor group
+lemlib::Drivetrain drivetrain(&left_motors, // left motor group
+                              &right_motors, // right motor group
                               11.7, // 11.7 inch track width
                               lemlib::Omniwheel::NEW_4, // using new 4" omnis
                               450, // drivetrain rpm is 450
