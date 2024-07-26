@@ -13,18 +13,18 @@ extern Motor main_intake; // main intake in port 11
 extern Motor bridge; // bridge in port 12
 
 // drivetrain settings
-extern lemlib::Drivetrain drivetrain;
+extern lemlib::Drivetrain driver;
 
-// NOT CURRENTLY ON BOT
- extern Imu imu; 
+// // NOT CURRENTLY ON BOT
+//  extern Imu imu; 
 
-// vertical tracking wheel encoder
-extern  Rotation vertical_rotation_sensor; // create a v5 rotation sensor on port 7]
-// horizontal tracking wheel encoder
-extern  Rotation horizontal_rotation_sensor; // create a v5 rotation sensor on port 8
-/// horizontal tracking wheel
-extern lemlib::TrackingWheel horizontal_tracking_wheel;
-// vertical tracking wheel
-extern lemlib::TrackingWheel vertical_tracking_wheel;
+// // vertical tracking wheel encoder
+// extern  Rotation vertical_rotation_sensor; // create a v5 rotation sensor on port 7]
+// // horizontal tracking wheel encoder
+// extern  Rotation horizontal_rotation_sensor; // create a v5 rotation sensor on port 8
+// /// horizontal tracking wheel
+// extern lemlib::TrackingWheel horizontal_tracking_wheel;
+// // vertical tracking wheel
+// extern lemlib::TrackingWheel vertical_tracking_wheel;
 
 

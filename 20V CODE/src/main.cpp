@@ -25,17 +25,21 @@ void on_center_button() {
 void initialize() {
 	lcd::initialize(); // initialize brain screen
 	chassis.calibrate(); // calibrate sensors
-	// print position to brain screen
 	Task screen_task([&]() {
-		while (true) {
-			// print robot location to the brain screen
-			lcd::print(0, "X: %f", chassis.getPose().x); // x
-			lcd::print(1, "Y: %f", chassis.getPose().y); // y
-			lcd::print(2, "Theta: %f", chassis.getPose().theta); // heading
-			// delay to save resources
-			delay(20);
-		}
+		lcd::print("Hello");
 	});
+
+	// print position to brain screen
+	// Task screen_task([&]() {
+	// 	while (true) {
+	// 		// print robot location to the brain screen
+	// 		lcd::print(0, "X: %f", chassis.getPose().x); // x
+	// 		lcd::print(1, "Y: %f", chassis.getPose().y); // y
+	// 		lcd::print(2, "Theta: %f", chassis.getPose().theta); // heading
+	// 		// delay to save resources
+	// 		delay(20);
+	// 	}
+	// });
 }
 
 /**

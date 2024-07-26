@@ -1,9 +1,7 @@
 
 #include "main.h"
 
-
-// controller 
- Controller controller( E_CONTROLLER_MASTER);
+Controller controller(E_CONTROLLER_MASTER);
 
 
 // Config the Motors 
@@ -13,7 +11,7 @@ Motor main_intake(11); // main intake in port 11
 Motor bridge(12); // bridge in port 12
 
 // drivetrain settings
-lemlib::Drivetrain drivetrain(&left_motors, // left motor group
+lemlib::Drivetrain driver(&left_motors, // left motor group
                               &right_motors, // right motor group
                               11.7, // 11.7 inch track width
                               lemlib::Omniwheel::NEW_4, // using new 4" omnis
@@ -23,15 +21,15 @@ lemlib::Drivetrain drivetrain(&left_motors, // left motor group
 
 
 
-// imu
- Imu imu(10);
-// vertical tracking wheel encoder
- Rotation vertical_rotation_sensor(7); // create a v5 rotation sensor on port 7]
-// horizontal tracking wheel encoder
- Rotation horizontal_rotation_sensor(8); // create a v5 rotation sensor on port 8
-/// horizontal tracking wheel
-lemlib::TrackingWheel horizontal_tracking_wheel(&horizontal_rotation_sensor, lemlib::Omniwheel::NEW_2, -5.2);
-// vertical tracking wheel
-lemlib::TrackingWheel vertical_tracking_wheel(&vertical_rotation_sensor, lemlib::Omniwheel::NEW_2, -3.25);
+// // imu
+//  Imu imu(10);
+// // vertical tracking wheel encoder
+//  Rotation vertical_rotation_sensor(7); // create a v5 rotation sensor on port 7]
+// // horizontal tracking wheel encoder
+//  Rotation horizontal_rotation_sensor(8); // create a v5 rotation sensor on port 8
+// /// horizontal tracking wheel
+// lemlib::TrackingWheel horizontal_tracking_wheel(&horizontal_rotation_sensor, lemlib::Omniwheel::NEW_2, -5.2);
+// // vertical tracking wheel
+// lemlib::TrackingWheel vertical_tracking_wheel(&vertical_rotation_sensor, lemlib::Omniwheel::NEW_2, -3.25);
 
 

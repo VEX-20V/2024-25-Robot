@@ -2,12 +2,12 @@
 #include "main.h"
 
 
-// odometry settings
-lemlib::OdomSensors sensors(&vertical_tracking_wheel, // vertical tracking wheel 1, set to null
-                            nullptr, // vertical tracking wheel 2, set to nullptr as we are using IMEs
-                            &horizontal_tracking_wheel, // horizontal tracking wheel 1
-                            nullptr, // horizontal tracking wheel 2, set to nullptr as we don't have a second one
-                            &imu // inertial sensor
+// // odometry settings
+lemlib::OdomSensors sensors( // &vertical_tracking_wheel, // vertical tracking wheel 1, set to null
+//                             nullptr, // vertical tracking wheel 2, set to nullptr as we are using IMEs
+//                             &horizontal_tracking_wheel, // horizontal tracking wheel 1
+//                             nullptr, // horizontal tracking wheel 2, set to nullptr as we don't have a second one
+//                             &imu // inertial sensor
 ); 
 
  
@@ -50,10 +50,10 @@ lemlib::ExpoDriveCurve steer_curve(3, // joystick deadband out of 127
 );
 
 // create the chassis
-lemlib::Chassis chassis(drivetrain,
+lemlib::Chassis chassis(driver,
                         lateral_controller,
                         angular_controller,
-//                        sensors,
+                        sensors,
                         &throttle_curve, 
                         &steer_curve
 );
